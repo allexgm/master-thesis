@@ -1,4 +1,7 @@
 #!/bin/bash
+# Calculate the error, for each amino acid, in the NNAIMGUI predictions
+# with respect to the reference method (AIMQB) and save it in a file
+
 
 for mol in alanine glycine proline arginine histidine serine aspargine isoleucine threonine aspartic leucine tryptophan lysine tyrosine glutamate valine glutamine phenylalanine
 do
