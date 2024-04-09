@@ -2,7 +2,7 @@
 [Too see in detail each step, check the "README.md" files in each directory]
 
 ## 1-VALIDATION_STEP
-In the validation step, the NNAIMGUI code with the default FFNN inplemented to predict the partial charges (NNAIMQ) of each atom from a xyz given file is appied to a selected group of molecules in order to comprobe the aplicability of this method. To do this, the predicted results was compared with the obtained with the QTAIM-based AIMQB program.
+In this step, the NNAIMGUI code with the default FFNN inplemented to predict the partial charges (NNAIMQ) of each atom from a xyz given file is appied to a selected group of molecules in order to comprobe the aplicability of this method. To do this, the predicted results was compared with the obtained with the QTAIM-based AIMQB program.
 
 ## 2-HF_PORTION_STEP
 In this step, I modify the HF contribution in the B3LYP functional to study the relation between the percentage used and the error committed in the prediction of QTAIM properties.

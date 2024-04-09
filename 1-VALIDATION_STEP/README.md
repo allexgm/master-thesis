@@ -16,13 +16,13 @@ For the optimized geometries I predict the QTAIM property using NNAIMGUI (with t
 [With "nnaimgui_properties_extractor" the QTAIM properties in the 'nnaim' files can be extracted in a proper format with 'csv' format]
 
 ## Calculate its charges at QTAIM level of theory ("aimqb-results" directory)
-From the optimized geometries I run a SP (single-point) calculation with Gaussian generating a 'wfn' file for different combinations of functional and basis. After, using this 'wfn' files as input, a QTAIM calculation were performed with AIMQB package, obtaining the QTAIM properties for each atom in each system at the different levels of theory. (the results obtained with M06-2X/def-TZVP are considered the "reference method" in our case).
+From the optimized geometries I run a SP (single-point) calculation with Gaussian generating a 'wfn' file for different combinations of functional and basis. After, using this 'wfn' files as input, a QTAIM calculation were performed with AIMQB package, obtaining the QTAIM properties for each atom in each system at the different levels of theory. (the results obtained with M06-2X/def-TZVP are considered the "reference method" in our case). <br>
 [With "aimqb_properties_extractor" the QTAIM properties in the 'sum' files can be extracted in a proper format with 'csv' format]
 
 ## Calculate the errors ("RESULTS" directory)
-Using the NNAIMGUI results and the reference method, the error in the prediction can be calculated. To show it, two types of plots were dcided to be used:
-- Dispersion graphs: Split by atoms, they show how much diverge the predictions with respect to the reference.
-- S-curve: Graph that shows the accumulated error depending on the percentage of atoms considered.
-[With "error_calculator.sh" script the results files can be created from the NNAIMGUI-results and reference_method folders]
+Using the NNAIMGUI results and the reference method, the error in the prediction can be calculated. To show it, two types of plots were dcided to be used: <br>
+- Dispersion graphs: Split by atoms, they show how much diverge the predictions with respect to the reference. <br>
+- S-curve: Graph that shows the accumulated error depending on the percentage of atoms considered. <br>
+[With "error_calculator.sh" script the results files can be created from the NNAIMGUI-results and reference_method folders] <br>
 [With "plot_creator", from the results files (created with "error_calculator.sh") the explained plots can be created]
 
