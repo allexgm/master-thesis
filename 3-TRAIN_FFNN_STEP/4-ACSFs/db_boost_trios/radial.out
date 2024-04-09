@@ -1,0 +1,712 @@
+
+##################################################################################
+
+                                 ~ MM2SF ~
+                                  (v 1.0)
+
+     An Unsupervised Machine Learning Approach for the Automatic Construction 
+                       of Local Chemical Descriptors
+
+     Theoretical and Computational Chemistry Group, University of Oviedo.
+
+    M. Gallegos, B. K. Isamura, P. L. A. Popelier and A. Martin Pendas (2024).
+##################################################################################
+
+
+##################################################################################
+
+                   ANALYSIS OF THE RADIAL LOCAL ENVIRONMENTS
+
+##################################################################################
+
+ # Spatial distribution strategy    = tailor-made
+ # Will read data from  ./buff_db.xyz  every  5  steps.
+ # Cutoff radius                    = 7.0
+ # Cutoff type                      = hard
+ # Auxiliary functions              = no
+ # Data smoothing                   = no
+ # Maximum number of GMM components = 15
+ # Maximum number of GMM iterations = 10000
+ # GMM sub-components of a GMM      = 1
+ # Number of bins for 2D histograms = 1000
+ 
+ # Computing the distance distribution........START!
+ # Computing the distance distribution........DONE!
+---------------------------------------
+ #          CC          # 
+---------------------------------------
+ # Discarding null values from distance distribution.
+ # Applying cutoff function.
+ # Normalizing the distribution.
+ # Optimizing GMM models..............
+ # Ideal number of GMM components : 11
+ # Parameters of the individual components of the GMM model :
+ 
+    # GMM component 0: w = 0.218138
+       -mean      :      1.549984    
+       -variance  :      0.003376    
+       -covariance:
+                         0.003376    
+       sub-component 0: w = 0.218138 mean = 1.550552 var = 0.003369
+    # GMM component 1: w = 0.152749
+       -mean      :      2.590560    
+       -variance  :      0.010314    
+       -covariance:
+                         0.010314    
+       sub-component 0: w = 0.152749 mean = 2.591553 var = 0.010290
+    # GMM component 2: w = 0.143755
+       -mean      :      2.413543    
+       -variance  :      0.014169    
+       -covariance:
+                         0.014169    
+       sub-component 0: w = 0.143755 mean = 2.414707 var = 0.014136
+    # GMM component 3: w = 0.105922
+       -mean      :      3.792122    
+       -variance  :      0.022780    
+       -covariance:
+                         0.022780    
+       sub-component 0: w = 0.105922 mean = 3.793597 var = 0.022725
+    # GMM component 4: w = 0.093974
+       -mean      :      1.412134    
+       -variance  :      0.002657    
+       -covariance:
+                         0.002657    
+       sub-component 0: w = 0.093974 mean = 1.412638 var = 0.002652
+    # GMM component 5: w = 0.069439
+       -mean      :      3.343543    
+       -variance  :      0.033329    
+       -covariance:
+                         0.033329    
+       sub-component 0: w = 0.069439 mean = 3.345328 var = 0.033249
+    # GMM component 6: w = 0.057624
+       -mean      :      2.832526    
+       -variance  :      0.019167    
+       -covariance:
+                         0.019167    
+       sub-component 0: w = 0.057624 mean = 2.833879 var = 0.019121
+    # GMM component 7: w = 0.056366
+       -mean      :      4.671661    
+       -variance  :      0.033283    
+       -covariance:
+                         0.033283    
+       sub-component 0: w = 0.056366 mean = 4.673444 var = 0.033203
+    # GMM component 8: w = 0.044597
+       -mean      :      4.291076    
+       -variance  :      0.028318    
+       -covariance:
+                         0.028318    
+       sub-component 0: w = 0.044597 mean = 4.292721 var = 0.028251
+    # GMM component 9: w = 0.031736
+       -mean      :      5.163191    
+       -variance  :      0.055956    
+       -covariance:
+                         0.055956    
+       sub-component 0: w = 0.031736 mean = 5.165503 var = 0.055822
+    # GMM component 10: w = 0.025700
+       -mean      :      6.001152    
+       -variance  :      0.122371    
+       -covariance:
+                         0.122371    
+       sub-component 0: w = 0.025700 mean = 6.004571 var = 0.122075
+ # 2D representation of GMM components saved to  CC_radial_dist.png
+ # Radial ACSF parameters saved to               CC.rad
+---------------------------------------
+ #          CH          # 
+---------------------------------------
+ # Discarding null values from distance distribution.
+ # Applying cutoff function.
+ # Normalizing the distribution.
+ # Optimizing GMM models..............
+ # Ideal number of GMM components : 8
+ # Parameters of the individual components of the GMM model :
+ 
+    # GMM component 0: w = 0.266531
+       -mean      :      2.139216    
+       -variance  :      0.020058    
+       -covariance:
+                         0.020058    
+       sub-component 0: w = 0.266531 mean = 2.140600 var = 0.020010
+    # GMM component 1: w = 0.182774
+       -mean      :      3.325709    
+       -variance  :      0.033266    
+       -covariance:
+                         0.033266    
+       sub-component 0: w = 0.182774 mean = 3.327492 var = 0.033186
+    # GMM component 2: w = 0.135193
+       -mean      :      2.761987    
+       -variance  :      0.038736    
+       -covariance:
+                         0.038736    
+       sub-component 0: w = 0.135193 mean = 2.763910 var = 0.038643
+    # GMM component 3: w = 0.106525
+       -mean      :      3.992308    
+       -variance  :      0.049923    
+       -covariance:
+                         0.049923    
+       sub-component 0: w = 0.106525 mean = 3.994492 var = 0.049803
+    # GMM component 4: w = 0.100434
+       -mean      :      1.104318    
+       -variance  :      0.002579    
+       -covariance:
+                         0.002579    
+       sub-component 0: w = 0.100434 mean = 1.104814 var = 0.002574
+    # GMM component 5: w = 0.097720
+       -mean      :      4.599093    
+       -variance  :      0.057766    
+       -covariance:
+                         0.057766    
+       sub-component 0: w = 0.097720 mean = 4.601442 var = 0.057627
+    # GMM component 6: w = 0.072928
+       -mean      :      5.403486    
+       -variance  :      0.085602    
+       -covariance:
+                         0.085602    
+       sub-component 0: w = 0.072928 mean = 5.406345 var = 0.085395
+    # GMM component 7: w = 0.037895
+       -mean      :      6.311528    
+       -variance  :      0.122017    
+       -covariance:
+                         0.122017    
+       sub-component 0: w = 0.037895 mean = 6.314942 var = 0.121722
+ # 2D representation of GMM components saved to  CH_radial_dist.png
+ # Radial ACSF parameters saved to               CH.rad
+---------------------------------------
+ #          CN          # 
+---------------------------------------
+ # Discarding null values from distance distribution.
+ # Applying cutoff function.
+ # Normalizing the distribution.
+ # Optimizing GMM models..............
+ # Ideal number of GMM components : 8
+ # Parameters of the individual components of the GMM model :
+ 
+    # GMM component 0: w = 0.291893
+       -mean      :      2.452812    
+       -variance  :      0.018223    
+       -covariance:
+                         0.018223    
+       sub-component 0: w = 0.291893 mean = 2.454132 var = 0.018180
+    # GMM component 1: w = 0.215469
+       -mean      :      1.426146    
+       -variance  :      0.005794    
+       -covariance:
+                         0.005794    
+       sub-component 0: w = 0.215469 mean = 1.426889 var = 0.005781
+    # GMM component 2: w = 0.126116
+       -mean      :      3.714614    
+       -variance  :      0.032299    
+       -covariance:
+                         0.032299    
+       sub-component 0: w = 0.126116 mean = 3.716370 var = 0.032222
+    # GMM component 3: w = 0.106881
+       -mean      :      3.067106    
+       -variance  :      0.042037    
+       -covariance:
+                         0.042037    
+       sub-component 0: w = 0.106881 mean = 3.069109 var = 0.041936
+    # GMM component 4: w = 0.094841
+       -mean      :      4.818298    
+       -variance  :      0.044118    
+       -covariance:
+                         0.044118    
+       sub-component 0: w = 0.094841 mean = 4.820351 var = 0.044012
+    # GMM component 5: w = 0.086340
+       -mean      :      4.322794    
+       -variance  :      0.042015    
+       -covariance:
+                         0.042015    
+       sub-component 0: w = 0.086340 mean = 4.324797 var = 0.041914
+    # GMM component 6: w = 0.055015
+       -mean      :      5.529361    
+       -variance  :      0.082754    
+       -covariance:
+                         0.082754    
+       sub-component 0: w = 0.055015 mean = 5.532173 var = 0.082555
+    # GMM component 7: w = 0.023446
+       -mean      :      6.321371    
+       -variance  :      0.137197    
+       -covariance:
+                         0.137197    
+       sub-component 0: w = 0.023446 mean = 6.324990 var = 0.136865
+ # 2D representation of GMM components saved to  CN_radial_dist.png
+ # Radial ACSF parameters saved to               CN.rad
+---------------------------------------
+ #          CO          # 
+---------------------------------------
+ # Discarding null values from distance distribution.
+ # Applying cutoff function.
+ # Normalizing the distribution.
+ # Optimizing GMM models..............
+ # Ideal number of GMM components : 14
+ # Parameters of the individual components of the GMM model :
+ 
+    # GMM component 0: w = 0.201354
+       -mean      :      2.418372    
+       -variance  :      0.007665    
+       -covariance:
+                         0.007665    
+       sub-component 0: w = 0.201354 mean = 2.419228 var = 0.007647
+    # GMM component 1: w = 0.111220
+       -mean      :      3.655777    
+       -variance  :      0.017897    
+       -covariance:
+                         0.017897    
+       sub-component 0: w = 0.111220 mean = 3.657084 var = 0.017855
+    # GMM component 2: w = 0.098039
+       -mean      :      1.355269    
+       -variance  :      0.003023    
+       -covariance:
+                         0.003023    
+       sub-component 0: w = 0.098039 mean = 1.355807 var = 0.003017
+    # GMM component 3: w = 0.090479
+       -mean      :      1.204984    
+       -variance  :      0.001022    
+       -covariance:
+                         0.001022    
+       sub-component 0: w = 0.090479 mean = 1.205296 var = 0.001020
+    # GMM component 4: w = 0.078705
+       -mean      :      3.279994    
+       -variance  :      0.020071    
+       -covariance:
+                         0.020071    
+       sub-component 0: w = 0.078705 mean = 3.281378 var = 0.020023
+    # GMM component 5: w = 0.077592
+       -mean      :      2.912248    
+       -variance  :      0.023023    
+       -covariance:
+                         0.023023    
+       sub-component 0: w = 0.077592 mean = 2.913731 var = 0.022968
+    # GMM component 6: w = 0.064878
+       -mean      :      4.789473    
+       -variance  :      0.022455    
+       -covariance:
+                         0.022455    
+       sub-component 0: w = 0.064878 mean = 4.790938 var = 0.022401
+    # GMM component 7: w = 0.064570
+       -mean      :      4.425666    
+       -variance  :      0.021325    
+       -covariance:
+                         0.021325    
+       sub-component 0: w = 0.064570 mean = 4.427093 var = 0.021274
+    # GMM component 8: w = 0.058319
+       -mean      :      4.080673    
+       -variance  :      0.021214    
+       -covariance:
+                         0.021214    
+       sub-component 0: w = 0.058319 mean = 4.082097 var = 0.021164
+    # GMM component 9: w = 0.046989
+       -mean      :      5.187460    
+       -variance  :      0.024800    
+       -covariance:
+                         0.024800    
+       sub-component 0: w = 0.046989 mean = 5.188999 var = 0.024741
+    # GMM component 10: w = 0.042775
+       -mean      :      5.580592    
+       -variance  :      0.021441    
+       -covariance:
+                         0.021441    
+       sub-component 0: w = 0.042775 mean = 5.582023 var = 0.021390
+    # GMM component 11: w = 0.025435
+       -mean      :      5.972201    
+       -variance  :      0.025571    
+       -covariance:
+                         0.025571    
+       sub-component 0: w = 0.025435 mean = 5.973764 var = 0.025510
+    # GMM component 12: w = 0.022956
+       -mean      :      6.422442    
+       -variance  :      0.022676    
+       -covariance:
+                         0.022676    
+       sub-component 0: w = 0.022956 mean = 6.423914 var = 0.022622
+    # GMM component 13: w = 0.016690
+       -mean      :      6.784659    
+       -variance  :      0.017026    
+       -covariance:
+                         0.017026    
+       sub-component 0: w = 0.016690 mean = 6.785934 var = 0.016986
+ # 2D representation of GMM components saved to  CO_radial_dist.png
+ # Radial ACSF parameters saved to               CO.rad
+---------------------------------------
+ #          HH          # 
+---------------------------------------
+ # Discarding null values from distance distribution.
+ # Applying cutoff function.
+ # Normalizing the distribution.
+ # Optimizing GMM models..............
+ # Ideal number of GMM components : 8
+ # Parameters of the individual components of the GMM model :
+ 
+    # GMM component 0: w = 0.159075
+       -mean      :      4.166105    
+       -variance  :      0.051787    
+       -covariance:
+                         0.051787    
+       sub-component 0: w = 0.159075 mean = 4.168329 var = 0.051662
+    # GMM component 1: w = 0.159008
+       -mean      :      3.609388    
+       -variance  :      0.046480    
+       -covariance:
+                         0.046480    
+       sub-component 0: w = 0.159008 mean = 3.611495 var = 0.046369
+    # GMM component 2: w = 0.154254
+       -mean      :      3.000805    
+       -variance  :      0.040862    
+       -covariance:
+                         0.040862    
+       sub-component 0: w = 0.154254 mean = 3.002781 var = 0.040764
+    # GMM component 3: w = 0.152745
+       -mean      :      2.445375    
+       -variance  :      0.045643    
+       -covariance:
+                         0.045643    
+       sub-component 0: w = 0.152745 mean = 2.447463 var = 0.045534
+    # GMM component 4: w = 0.127800
+       -mean      :      4.833498    
+       -variance  :      0.066642    
+       -covariance:
+                         0.066642    
+       sub-component 0: w = 0.127800 mean = 4.836021 var = 0.066481
+    # GMM component 5: w = 0.089789
+       -mean      :      5.517764    
+       -variance  :      0.097065    
+       -covariance:
+                         0.097065    
+       sub-component 0: w = 0.089789 mean = 5.520808 var = 0.096831
+    # GMM component 6: w = 0.085117
+       -mean      :      1.753859    
+       -variance  :      0.014578    
+       -covariance:
+                         0.014578    
+       sub-component 0: w = 0.085117 mean = 1.755039 var = 0.014544
+    # GMM component 7: w = 0.072213
+       -mean      :      6.390109    
+       -variance  :      0.105626    
+       -covariance:
+                         0.105626    
+       sub-component 0: w = 0.072213 mean = 6.393285 var = 0.105371
+ # 2D representation of GMM components saved to  HH_radial_dist.png
+ # Radial ACSF parameters saved to               HH.rad
+---------------------------------------
+ #          HN          # 
+---------------------------------------
+ # Discarding null values from distance distribution.
+ # Applying cutoff function.
+ # Normalizing the distribution.
+ # Optimizing GMM models..............
+ # Ideal number of GMM components : 8
+ # Parameters of the individual components of the GMM model :
+ 
+    # GMM component 0: w = 0.187212
+       -mean      :      4.176273    
+       -variance  :      0.074502    
+       -covariance:
+                         0.074502    
+       sub-component 0: w = 0.187212 mean = 4.178941 var = 0.074322
+    # GMM component 1: w = 0.180245
+       -mean      :      3.336532    
+       -variance  :      0.049245    
+       -covariance:
+                         0.049245    
+       sub-component 0: w = 0.180245 mean = 3.338701 var = 0.049126
+    # GMM component 2: w = 0.166965
+       -mean      :      1.021853    
+       -variance  :      0.001978    
+       -covariance:
+                         0.001978    
+       sub-component 0: w = 0.166965 mean = 1.022288 var = 0.001974
+    # GMM component 3: w = 0.136209
+       -mean      :      2.704601    
+       -variance  :      0.050338    
+       -covariance:
+                         0.050338    
+       sub-component 0: w = 0.136209 mean = 2.706793 var = 0.050217
+    # GMM component 4: w = 0.115573
+       -mean      :      2.135333    
+       -variance  :      0.013193    
+       -covariance:
+                         0.013193    
+       sub-component 0: w = 0.115573 mean = 2.136455 var = 0.013162
+    # GMM component 5: w = 0.085134
+       -mean      :      4.911961    
+       -variance  :      0.086874    
+       -covariance:
+                         0.086874    
+       sub-component 0: w = 0.085134 mean = 4.914842 var = 0.086664
+    # GMM component 6: w = 0.077549
+       -mean      :      5.615089    
+       -variance  :      0.088846    
+       -covariance:
+                         0.088846    
+       sub-component 0: w = 0.077549 mean = 5.618002 var = 0.088631
+    # GMM component 7: w = 0.051113
+       -mean      :      6.449685    
+       -variance  :      0.095723    
+       -covariance:
+                         0.095723    
+       sub-component 0: w = 0.051113 mean = 6.452709 var = 0.095491
+ # 2D representation of GMM components saved to  HN_radial_dist.png
+ # Radial ACSF parameters saved to               HN.rad
+---------------------------------------
+ #          HO          # 
+---------------------------------------
+ # Discarding null values from distance distribution.
+ # Applying cutoff function.
+ # Normalizing the distribution.
+ # Optimizing GMM models..............
+ # Ideal number of GMM components : 8
+ # Parameters of the individual components of the GMM model :
+ 
+    # GMM component 0: w = 0.197166
+       -mean      :      2.462110    
+       -variance  :      0.055955    
+       -covariance:
+                         0.055955    
+       sub-component 0: w = 0.197166 mean = 2.464422 var = 0.055820
+    # GMM component 1: w = 0.187187
+       -mean      :      3.115060    
+       -variance  :      0.053490    
+       -covariance:
+                         0.053490    
+       sub-component 0: w = 0.187187 mean = 3.117321 var = 0.053361
+    # GMM component 2: w = 0.156892
+       -mean      :      3.731018    
+       -variance  :      0.050922    
+       -covariance:
+                         0.050922    
+       sub-component 0: w = 0.156892 mean = 3.733224 var = 0.050799
+    # GMM component 3: w = 0.150013
+       -mean      :      4.282040    
+       -variance  :      0.056665    
+       -covariance:
+                         0.056665    
+       sub-component 0: w = 0.150013 mean = 4.284366 var = 0.056528
+    # GMM component 4: w = 0.108428
+       -mean      :      4.988627    
+       -variance  :      0.072585    
+       -covariance:
+                         0.072585    
+       sub-component 0: w = 0.108428 mean = 4.991260 var = 0.072410
+    # GMM component 5: w = 0.080910
+       -mean      :      5.702834    
+       -variance  :      0.083624    
+       -covariance:
+                         0.083624    
+       sub-component 0: w = 0.080910 mean = 5.705660 var = 0.083422
+    # GMM component 6: w = 0.063842
+       -mean      :      6.438313    
+       -variance  :      0.093690    
+       -covariance:
+                         0.093690    
+       sub-component 0: w = 0.063842 mean = 6.441304 var = 0.093464
+    # GMM component 7: w = 0.055561
+       -mean      :      0.980476    
+       -variance  :      0.001870    
+       -covariance:
+                         0.001870    
+       sub-component 0: w = 0.055561 mean = 0.980898 var = 0.001866
+ # 2D representation of GMM components saved to  HO_radial_dist.png
+ # Radial ACSF parameters saved to               HO.rad
+---------------------------------------
+ #          NN          # 
+---------------------------------------
+ # Discarding null values from distance distribution.
+ # Applying cutoff function.
+ # Normalizing the distribution.
+ # Optimizing GMM models..............
+ # Ideal number of GMM components : 12
+ # Parameters of the individual components of the GMM model :
+ 
+    # GMM component 0: w = 0.197793
+       -mean      :      2.234620    
+       -variance  :      0.004295    
+       -covariance:
+                         0.004295    
+       sub-component 0: w = 0.197793 mean = 2.235261 var = 0.004286
+    # GMM component 1: w = 0.166191
+       -mean      :      2.394433    
+       -variance  :      0.005086    
+       -covariance:
+                         0.005086    
+       sub-component 0: w = 0.166191 mean = 2.395130 var = 0.005075
+    # GMM component 2: w = 0.101650
+       -mean      :      4.958896    
+       -variance  :      0.018654    
+       -covariance:
+                         0.018654    
+       sub-component 0: w = 0.101650 mean = 4.960231 var = 0.018609
+    # GMM component 3: w = 0.086130
+       -mean      :      4.592347    
+       -variance  :      0.016637    
+       -covariance:
+                         0.016637    
+       sub-component 0: w = 0.086130 mean = 4.593607 var = 0.016597
+    # GMM component 4: w = 0.085043
+       -mean      :      5.402930    
+       -variance  :      0.027603    
+       -covariance:
+                         0.027603    
+       sub-component 0: w = 0.085043 mean = 5.404554 var = 0.027537
+    # GMM component 5: w = 0.067028
+       -mean      :      3.843911    
+       -variance  :      0.027696    
+       -covariance:
+                         0.027696    
+       sub-component 0: w = 0.067028 mean = 3.845537 var = 0.027630
+    # GMM component 6: w = 0.066026
+       -mean      :      4.268715    
+       -variance  :      0.017800    
+       -covariance:
+                         0.017800    
+       sub-component 0: w = 0.066026 mean = 4.270019 var = 0.017758
+    # GMM component 7: w = 0.059683
+       -mean      :      5.834547    
+       -variance  :      0.024959    
+       -covariance:
+                         0.024959    
+       sub-component 0: w = 0.059683 mean = 5.836091 var = 0.024899
+    # GMM component 8: w = 0.052708
+       -mean      :      6.745580    
+       -variance  :      0.024426    
+       -covariance:
+                         0.024426    
+       sub-component 0: w = 0.052708 mean = 6.747108 var = 0.024368
+    # GMM component 9: w = 0.043752
+       -mean      :      6.280507    
+       -variance  :      0.025679    
+       -covariance:
+                         0.025679    
+       sub-component 0: w = 0.043752 mean = 6.282073 var = 0.025618
+    # GMM component 10: w = 0.037561
+       -mean      :      2.937128    
+       -variance  :      0.032753    
+       -covariance:
+                         0.032753    
+       sub-component 0: w = 0.037561 mean = 2.938896 var = 0.032674
+    # GMM component 11: w = 0.036435
+       -mean      :      3.341085    
+       -variance  :      0.038379    
+       -covariance:
+                         0.038379    
+       sub-component 0: w = 0.036435 mean = 3.342999 var = 0.038287
+ # 2D representation of GMM components saved to  NN_radial_dist.png
+ # Radial ACSF parameters saved to               NN.rad
+---------------------------------------
+ #          NO          # 
+---------------------------------------
+ # Discarding null values from distance distribution.
+ # Applying cutoff function.
+ # Normalizing the distribution.
+ # Optimizing GMM models..............
+ # Ideal number of GMM components : 12
+ # Parameters of the individual components of the GMM model :
+ 
+    # GMM component 0: w = 0.139127
+       -mean      :      2.673025    
+       -variance  :      0.012508    
+       -covariance:
+                         0.012508    
+       sub-component 0: w = 0.139127 mean = 2.674118 var = 0.012478
+    # GMM component 1: w = 0.121234
+       -mean      :      2.931594    
+       -variance  :      0.010582    
+       -covariance:
+                         0.010582    
+       sub-component 0: w = 0.121234 mean = 2.932599 var = 0.010557
+    # GMM component 2: w = 0.115651
+       -mean      :      3.495430    
+       -variance  :      0.008836    
+       -covariance:
+                         0.008836    
+       sub-component 0: w = 0.115651 mean = 3.496349 var = 0.008816
+    # GMM component 3: w = 0.108687
+       -mean      :      3.650848    
+       -variance  :      0.007687    
+       -covariance:
+                         0.007687    
+       sub-component 0: w = 0.108687 mean = 3.651704 var = 0.007669
+    # GMM component 4: w = 0.084071
+       -mean      :      5.264349    
+       -variance  :      0.030720    
+       -covariance:
+                         0.030720    
+       sub-component 0: w = 0.084071 mean = 5.266062 var = 0.030646
+    # GMM component 5: w = 0.082003
+       -mean      :      4.807371    
+       -variance  :      0.036151    
+       -covariance:
+                         0.036151    
+       sub-component 0: w = 0.082003 mean = 4.809229 var = 0.036064
+    # GMM component 6: w = 0.078746
+       -mean      :      3.205206    
+       -variance  :      0.013142    
+       -covariance:
+                         0.013142    
+       sub-component 0: w = 0.078746 mean = 3.206326 var = 0.013111
+    # GMM component 7: w = 0.074914
+       -mean      :      5.751769    
+       -variance  :      0.035711    
+       -covariance:
+                         0.035711    
+       sub-component 0: w = 0.074914 mean = 5.753616 var = 0.035625
+    # GMM component 8: w = 0.062790
+       -mean      :      4.228700    
+       -variance  :      0.051235    
+       -covariance:
+                         0.051235    
+       sub-component 0: w = 0.062790 mean = 4.230913 var = 0.051111
+    # GMM component 9: w = 0.059495
+       -mean      :      6.251571    
+       -variance  :      0.036365    
+       -covariance:
+                         0.036365    
+       sub-component 0: w = 0.059495 mean = 6.253435 var = 0.036278
+    # GMM component 10: w = 0.038106
+       -mean      :      2.293645    
+       -variance  :      0.007226    
+       -covariance:
+                         0.007226    
+       sub-component 0: w = 0.038106 mean = 2.294476 var = 0.007209
+    # GMM component 11: w = 0.035176
+       -mean      :      6.718885    
+       -variance  :      0.025440    
+       -covariance:
+                         0.025440    
+       sub-component 0: w = 0.035176 mean = 6.720444 var = 0.025379
+ # 2D representation of GMM components saved to  NO_radial_dist.png
+ # Radial ACSF parameters saved to               NO.rad
+---------------------------------------
+ #          OO          # 
+---------------------------------------
+ # Discarding null values from distance distribution.
+ # Applying cutoff function.
+ # Normalizing the distribution.
+ # Optimizing GMM models..............
+ # Ideal number of GMM components : 4
+ # Parameters of the individual components of the GMM model :
+ 
+    # GMM component 0: w = 0.520757
+       -mean      :      2.236485    
+       -variance  :      0.003858    
+       -covariance:
+                         0.003858    
+       sub-component 0: w = 0.520757 mean = 2.237092 var = 0.003850
+    # GMM component 1: w = 0.207422
+       -mean      :      4.923919    
+       -variance  :      0.181170    
+       -covariance:
+                         0.181170    
+       sub-component 0: w = 0.207422 mean = 4.928078 var = 0.180731
+    # GMM component 2: w = 0.154975
+       -mean      :      3.668981    
+       -variance  :      0.353357    
+       -covariance:
+                         0.353357    
+       sub-component 0: w = 0.154975 mean = 3.674790 var = 0.352500
+    # GMM component 3: w = 0.116847
+       -mean      :      5.919935    
+       -variance  :      0.222354    
+       -covariance:
+                         0.222354    
+       sub-component 0: w = 0.116847 mean = 5.924543 var = 0.221816
+ # 2D representation of GMM components saved to  OO_radial_dist.png
+ # Radial ACSF parameters saved to               OO.rad

@@ -1,7 +1,9 @@
 # 1-VALIDATION_STEP
-In the validation step, the NNAIMGUI code with the default FFNN inplemented to predict the partial charges of each atom from a xyz given file is appied to a selected group of molecules in order to comprobe the aplicability of this method. To do this, the predicted results was compared with the obtained with the QTAIM-based AIMQB program.
+[All the scripts available are self-explanatory, explaining what it does in the header and some comments through the code]
 
-To validate the NNAIMGUI code the purposed methodology is:
+In the validation step, the NNAIMGUI code with the default FFNN implemented to predict the partial charges (NNAIMQ) of each atom from a xyz given file is appied to a selected group of molecules in order to comprobe the aplicability of this method. To do this, the predicted results was compared with the obtained with the QTAIM-based AIMQB program.
+
+To validate the NNAIMQ model the purposed methodology is:
 
 ## Chose a set of molecules ("pdb" directory)
 In my case I took 18 esential amino-acids availables from PDB in 'xml' format, transformin it in 'xyz' format using openbabel.
