@@ -1,4 +1,4 @@
-## 3-MODEL_APPLICATION_STEP
+## 4-MODEL_APPLICATION_STEP
 [All the scripts available are self-explanatory, explaining what it does in the header and some comments through the code]
 
 In this step, I used the developed model to predict the LI of 4 bio-systems of biochemical interest. This application shows the usefulness of this FFNN model and its limitations.
