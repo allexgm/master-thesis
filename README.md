@@ -1,4 +1,5 @@
 # Master-thesis
+The thesis document itself is the pdf file called "Alejandro_Garcia-Master_Thesis.pdf"
 [Too see in detail each step, check the "README.md" files in each directory]
 
 ## 1-Database_creation
